@@ -7,18 +7,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
+<link href="/path/to/print.css" media="print" rel="stylesheet" />
 <body>
+
   <!--Left Side-->
+
   <div class="container">
     <div class="left_side">
-  <!--Left Side Image and Name-->    
+
+  <!--Left Side Image and Name-->   
+
     <div class="profileText">
       <div class="imgBx">
         <img src="Images/Resume Image 1.jpg">
       </div>
-      <h2>Cheryl Sayers</h2>
+      <h2 class="name">Cheryl Sayers</h2>
     </div>
+
   <!--Left Side Contact Info-->  
+
     <div class="contactInfo">
       <h3 class="title">Contact Info</h3>
       <ul>
@@ -37,11 +44,10 @@
         </li>
       </ul>
     
-    </div>
-  <!--Left Side Education-->  
+    </div>  
     
+  <!--Left Side References-->  
 
-  <!--References-->  
     <div class="contactInfo references"></div>  
       <h3 class="title">Refrences</h3>
       <ul class="referenceBullet">
@@ -60,6 +66,12 @@
           <h5 class="referenceTitle">smenconi73@gmail.com</h5>
         </li>
         <li class="referenceBox">
+          <h4 class="reference">Heather Howard</h4>
+          <h5 class="referenceTitle">Customer Success Manager</h5>
+          <h5 class="referenceTitle">Zayo Group</h5>
+          <h5 class="referenceTitle">heather.howard@zayo.com</h5>
+        </li>
+        <li class="referenceBox">
           <h4 class="reference">Rob Johnston</h4>
           <h5 class="referenceTitle">Co-Worker</h5>
           <h5 class="referenceTitle">Hollywood Entertainment</h5>
@@ -67,25 +79,33 @@
           <h5 class="referenceTitle">robert.johnston@globalpay.com</h5>
         </li>
       </ul>
+
     <!--Left Side Interests--> 
-      <div class="about interest">
+
+      <!--<div class="about interest">
         <h3 class="title">Interests</h3>
         <ul>
           <li><i class="fa fa-music" aria-hidden="true"></i>Music</li>
           <li><i class="fa fa-book" aria-hidden="true"></i>Reading</li>
           <li><i class="fa fa-code" aria-hidden="true"></i>Coding</li>
         </ul>
-      </div>  
+      </div>-->  
 
     </div>
+
   <!--Right Side-->  
+
     <div class="right_side">
-  <!--Right Side Professional Summary-->    
+
+  <!--Right Side Professional Summary-->   
+
     <div class="about">
       <h2 class="title2">Professional Summary</h2>
       <p>Highly organized and detail-oriented Project Coordinator/Manager with over 20 years of experience in managing, overseeing and implementing the successful completion of multiple projects. Experienced in coordinating teams, resources and stakeholders to ensure successful project delivery.</p>
     </div>
-  <!--Right Side Work History-->  
+
+  <!--Right Side Work History--> 
+
     <div class="about">
       <h2 class="title2">Work History</h2>
       <div class="box">
@@ -155,30 +175,26 @@
         <div class="year_company">
         </div>
         <div class="text">
-          <p>--Additional Work History Available Upon Request--</p>
+          <p class="additionalHistory">--Additional Work History Available Upon Request--</p>
         </div>
       </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <hr class="printOnly">
     
     <!--Right Side Skills-->  
+
     <div class="about skills">
       <h2 class="title2">Skills</h2>
       <div class="box">
         <ul class="skillSet">
-          <li>Telecom - Service Delivery</li>
-          <li>Store Openings, Remodels, Moves & Acquisitions</li>
-          <li>Site Surveys & Installation</li>
-          <li>Wholesale Shop-In-Shop Installation, Fixture Inventory</li>
-          <li>Retail Brand Marketing</li>
-          <li>Inventory, Shipping, Logistics</li>
+          <li>Communication with all stakeholders</li>
           <li>Customer Service</li>
-          <li>Stakeholder communications</li>
+          <li>Interpersonal Skills</li>
+          <li>Orgaizational Skills</li>
+          <li>Problem Solving</li>
+          <li>Monitor Progress</li>
+          <li>Training</li>
+          <li>Data Entry</li>
+          <li>Attention to Detail</li>
           <li>Risk management, process improvements</li>
           <li>Microsoft & Google Office Suites</li>
           <li>Salesforce and other CRM tools</li>
@@ -186,12 +202,16 @@
         </ul>
       </div>
     </div> 
-    <hr>
+
+    <!--Right Side Education-->  
+
+    <hr class="screenOnly">
     <div class="contactInfo education">
       <h2 class="title2">Education</h2>
       <ul>
         <li class="education">
           <p>Currently studying for Project Management Certificate - PMI</p>
+          <p>Currently studying front end web development (html, CSS, JavaScript)</p>
           <br>
           <p>1984-1986</p>
           <p>Diploma</p>

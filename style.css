@@ -44,6 +44,7 @@ body {
   align-items: center;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255,255,255,0.2);
+  
 }
 
 .profileText .imgBx {
@@ -93,6 +94,8 @@ body {
 
 .contactInfo ul {
   position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .contactInfo ul li {
@@ -212,9 +215,13 @@ p {
   align-items: center;
  }
 
-/*Interests*/
+ .about.skills {
+  padding-top: 50px;
+ }
 
-.interest ul {
+ /*Interests*/
+
+/*.interest ul {
   display: grid;
   grid-template-columns: repeat(4,1fr);
 }
@@ -235,7 +242,7 @@ p {
 .about.interest {
   margin-bottom: 5px;
   margin-top: 50px;
-}
+}*/
 
 @media (max-width: 1000px) {
   .container {
@@ -266,3 +273,149 @@ hr {
   border-style: ridge;
   border-color: #03a9f4;
 }
+
+/*Possibly Remove*/
+
+@media print {
+  body {
+    background: white; 
+  }
+}
+
+@media print {
+  .container .left_side {
+    background: white; 
+  }
+}
+
+@media print {
+  .profileText h2 {
+    color: white; 
+  }
+  .profileText {
+    border-bottom: 1px solid #03a9f4;
+  }
+  .title {
+    color: white; 
+  }
+  .referenceTitle {
+    color: white; 
+  }
+  .contactInfo ul li span {
+    color: white; 
+  }
+  .emailLink {
+    color: white; 
+  }
+  .additionalHistory {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+  }
+  .container .left_side {
+    position: relative;
+    padding: 40px;
+    background: #003147;
+  }
+  .profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+  }
+  .profileText h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600px;
+    line-height: 1.4em;
+}
+ .profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+}
+
+/*Cover Letter*/
+
+.container .rightSide {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+/*Quotes*/
+
+.quotes {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contactInfo .quotes {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.benAli {
+  color: #fff;
+}
+
+/*Interests*/
+
+/*.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #fff;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+.about.interest {
+  margin-bottom: 5px;
+  margin-top: 40px;
+}*/
